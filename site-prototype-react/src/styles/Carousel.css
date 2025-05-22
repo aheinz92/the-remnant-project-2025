@@ -1,0 +1,79 @@
+/* General wrapper for the Swiper instance to control its max-width and centering */
+.swiper-container-wrapper {
+  width: 90%; /* Adjust width as desired */
+  max-width: 1200px; /* Maximum width of the carousel */
+  margin: 40px auto; /* Centering the carousel */
+  padding: 20px 0;
+}
+
+/* Styling for the main Swiper container */
+.mySwiper {
+  width: 100%;
+  padding-top: 50px; /* Space for pagination/navigation if at top */
+  padding-bottom: 50px; /* Space for pagination */
+}
+
+/* Styling for individual Swiper slides */
+.exhibit-swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 320px; /* Width of the central slide */
+  height: 568.89px; /* Height calculated for 9:16 aspect ratio (320 * 16/9) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); /* Gallery-like shadow */
+  border-radius: 8px; /* Optional: rounded corners for slides */
+  overflow: hidden; /* Ensures shadows from images don't break slide boundaries */
+}
+
+/* Styling for the images within Swiper slides */
+.exhibit-swiper-image {
+  display: block;
+  width: 100%; /* Image takes full width of the slide */
+  height: 100%; /* Image takes full height of the slide */
+  object-fit: cover; /* Cover the slide area, might crop if aspect ratio isn't perfect but slide is now matched */
+  border-radius: 8px; /* Match slide border-radius if any */
+}
+
+/* Styling for Swiper navigation buttons (arrows) */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #333; /* Arrow color - adjust to fit your theme */
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+  border-radius: 50%;
+  width: 44px; /* Fixed width for circle */
+  height: 44px; /* Fixed height for circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px; /* Size of the arrow icon */
+  font-weight: bold;
+}
+
+/* Styling for Swiper pagination bullets */
+.swiper-pagination-bullet {
+  background: #333; /* Bullet color */
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  background: #007aff; /* Active bullet color - adjust to your theme */
+  opacity: 1;
+}
+
+/* Ensure the slides in coverflow have some perspective */
+.swiper-slide {
+  transform-style: preserve-3d;
+}
+
+/* Add a subtle background to the page or section if desired for gallery feel */
+/*
+body, #main-content section {
+  background-color: #f4f4f4;
+}
+*/

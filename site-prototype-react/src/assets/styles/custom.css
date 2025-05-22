@@ -1,0 +1,1535 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure the body allows the #root to fill it if using min-height on #root */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+/* custom.css */
+
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+/* Theme styling */
+.gilded-theme {
+    --primary-color: #fcc646;
+    --primary-color-rgb: 252, 198, 70;
+    --secondary-color: #eab33a; /* Slightly desaturated/darker gold */
+    --secondary-color-rgb: 234, 179, 58;
+    --accent-color: #d8c2ef; /* Pale lavender */
+    --accent-color-rgb: 216, 194, 239;
+    --background-color: #fffcf2; /* Very light cream/off-white */
+    --text-color: #4A3B2A; /* Dark brown */
+    --text-color-rgb: 74, 59, 42;
+    --light-color: #ffffff; /* Dark color for text on gold backgrounds */
+    --border-color: #536856; /* Light grayish brown */
+    --card-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    --btn-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --card-background-color: #ffffff; /* White cards */
+    --header-glow-color: transparent;
+    --background-gradient-other-color: #fff8e1; /* Light yellowish cream for gradient top */
+    --h1-underline-color: var(--primary-color);
+
+    /* Neumorphic style variables for light theme */
+    --neumorphic-color-bkg: hsl(45, 80%, 95%); /* Light gold/cream */
+    --neumorphic-shadow1: rgba(0, 0, 0, 0.1);
+    --neumorphic-shadow2: rgba(255, 255, 255, 0.8);
+    --neumorphic-anim-shadow1-hsl: 45deg 30% 70%; /* Darker gold/brown for shadow animation */
+    --neumorphic-anim-shadow2-hsl: 45deg 100% 98%; /* Lighter gold/cream for highlight animation */
+
+    /* Nav Card Specific Variables */
+    --nav-card-bg: linear-gradient(to bottom, #fffef7, #fbfaff); /* Even more subtle light cream to very pale lavender gradient */
+    --nav-card-text-color: var(--text-color);
+    --nav-card-title-color: var(--primary-color);
+    --nav-card-hover-text-color: var(--secondary-color);
+    --nav-card-hover-title-color: var(--secondary-color);
+    --nav-card-border: none;
+    --nav-card-hover-border: none;
+    --nav-card-box-shadow: 0 0 8px rgba(var(--primary-color-rgb), 0.25), 0 1px 3px rgba(0,0,0,0.04); /* Subtle gold glow + soft shadow - Lavender glow removed */
+    --nav-card-hover-box-shadow: 0 0 12px rgba(var(--primary-color-rgb), 0.4), 0 2px 5px rgba(0,0,0,0.07); /* Enhanced gold glow + soft shadow - Lavender glow removed */
+}
+.gilded-theme .selected-timeline-card {
+    background-color: #fef5d8 !important; /* A slightly off-white gold */
+}
+
+.legacy-theme {
+    --primary-color: #926001;
+    --primary-color-rgb: 146, 96, 1;
+    --secondary-color: #946101;
+    --secondary-color-rgb: 148, 97, 1;
+    --accent-color: #5A4CBB;
+    --accent-color-rgb: 90, 76, 187;
+    --background-color: #1A0E07;
+    --text-color: #dddddd;
+    --text-color-rgb: 221, 221, 221;
+    --light-color: #dddddd;
+    --border-color: var(--light-color);
+    --card-shadow: 0 6px 10px rgba(255, 255, 255, 0.2);
+    --btn-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+    --card-background-color: #2A1E17;
+    --header-glow-color: transparent; /* Ensure glow is reset */
+    --background-gradient-other-color: var(--background-color); /* Default to solid color */
+    --h1-underline-color: var(--primary-color);
+
+    /* Nav Card Specific Variables */
+    --nav-card-bg: linear-gradient(to bottom, #3a2d25, #362921); /* Subtle dark gradient */
+    --nav-card-text-color: var(--text-color);
+    --nav-card-title-color: var(--primary-color);
+    --nav-card-hover-text-color: var(--secondary-color);
+    --nav-card-hover-title-color: var(--secondary-color);
+    --nav-card-border: none;
+    --nav-card-hover-border: none;
+    --nav-card-box-shadow: 0 0 8px rgba(var(--primary-color-rgb), 0.3), 0 2px 4px rgba(255,255,255,0.05); /* Subtle primary color glow + light shadow */
+    --nav-card-hover-box-shadow: 0 0 12px rgba(var(--primary-color-rgb), 0.5), 0 3px 6px rgba(255,255,255,0.08);
+}
+.legacy-theme .selected-timeline-card {
+    background-color: #3c2f25 !important;
+}
+
+.afrofuturism-theme {
+    --primary-color: #28093a;
+    --primary-color-rgb: 40, 9, 58;
+    --secondary-color: #d1764f; /* Lighter orange */
+    --secondary-color-rgb: 209, 118, 79;
+    --accent-color: #5A4CBB; /* Slightly darker and desaturated lavender for contrast */
+    --accent-color-rgb: 90, 76, 187;
+    --background-color: #1A0E07; /* Darkened background color for legacy theme */
+    --text-color: #dddddd; /* Slightly less bright white */
+    --text-color-rgb: 221, 221, 221;
+    --light-color: #dddddd; /* Slightly less bright white */
+    --border-color: var(--light-color);
+    --card-shadow: 0 6px 10px rgba(243, 158, 0, 0.2); /* Adjusted white shadow for dark background */
+    --btn-shadow: 0 2px 4px rgba(243, 158, 0, 0.2); /* Light shadow for dark background */
+    --card-background-color: #6F4493; /* Slightly lighter background for cards in legacy theme */
+    --header-glow-color: #FFD700; /* Gold color for header glow */
+    --background-gradient-other-color: #48086d; /* Vibrant purple for top of gradient */
+    --h1-underline-color: #ffffff; /* White underline for Afrofuturism */
+
+    /* Nav Card Specific Variables */
+    --nav-card-bg: linear-gradient(to bottom, #7e55a3, #865dac); /* Subtle purple gradient */
+    --nav-card-text-color: var(--text-color);
+    --nav-card-title-color: var(--secondary-color); /* Orange for title */
+    --nav-card-hover-text-color: #f0c4b3; /* Lighter orange for hover */
+    --nav-card-hover-title-color: #f0c4b3;
+    --nav-card-border: none;
+    --nav-card-hover-border: none;
+    --nav-card-box-shadow: 0 0 8px rgba(var(--secondary-color-rgb), 0.3), 0 2px 4px rgba(var(--secondary-color-rgb),0.1); /* Orange glow */
+    --nav-card-hover-box-shadow: 0 0 12px rgba(var(--secondary-color-rgb), 0.5), 0 3px 6px rgba(var(--secondary-color-rgb),0.15);
+}
+.afrofuturism-theme .selected-timeline-card {
+    background-color: #835AA9 !important;
+}
+
+.archive-theme {
+    --primary-color: #7c3f58; /* burgundy */
+    --primary-color-rgb: 124, 63, 88;
+    --secondary-color: #a65e72; /* lighter burgundy */
+    --secondary-color-rgb: 166, 94, 114;
+    --accent-color: #d4a373; /* warm sand/gold - replaces blue */
+    --accent-color-rgb: 212, 163, 115;
+    --background-color: #f8f1ee; /* soft cream-gray background */
+    --text-color: #4a2c2a; /* dark brown text */
+    --text-color-rgb: 74, 44, 42;
+    --light-color: #ffffff;
+    --border-color: #e0d6d2;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --btn-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle dark shadow */
+    --h1-underline-color: var(--primary-color);
+ 
+    --card-background-color: var(--background-color);
+    --background-gradient-other-color: var(--background-color); /* Default to solid color */
+
+    /* Nav Card Specific Variables */
+    --nav-card-bg: linear-gradient(to bottom, #fbf6f3, #fcf9f6); /* Subtle light cream gradient */
+    --nav-card-text-color: var(--text-color);
+    --nav-card-title-color: var(--primary-color);
+    --nav-card-hover-text-color: var(--secondary-color);
+    --nav-card-hover-title-color: var(--secondary-color);
+    --nav-card-border: none;
+    --nav-card-hover-border: none;
+    --nav-card-box-shadow: 0 0 7px rgba(var(--primary-color-rgb), 0.2), 0 1px 3px rgba(0,0,0,0.04); /* Subtle burgundy glow */
+    --nav-card-hover-box-shadow: 0 0 10px rgba(var(--primary-color-rgb), 0.35), 0 2px 5px rgba(0,0,0,0.07);
+}
+.archive-theme .selected-timeline-card {
+    background-color: #ede4e0 !important;
+}
+
+/* High Contrast Theme */
+.contrast-theme {
+    --primary-color: #8b0000; /* dark red */
+    --primary-color-rgb: 139, 0, 0;
+    --secondary-color: #b22222; /* firebrick red */
+    --secondary-color-rgb: 178, 34, 34;
+    --accent-color: #ffd700; /* gold */
+    --accent-color-rgb: 255, 215, 0;
+    --background-color: #f0f0f0; /* light gray background */
+    --text-color: #000000; /* black text */
+    --text-color-rgb: 0, 0, 0;
+    --light-color: #ffffff; /* white */
+    --border-color: #000000; /* black borders */
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    --h1-underline-color: var(--primary-color);
+
+    --btn-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* More prominent dark shadow */
+    --card-background-color: var(--background-color);
+    --background-gradient-other-color: var(--background-color); /* Default to solid color */
+
+    /* Nav Card Specific Variables */
+    --nav-card-bg: linear-gradient(to bottom, #f5f5f5, #f8f8f8); /* Subtle light gray gradient */
+    --nav-card-text-color: var(--text-color);
+    --nav-card-title-color: var(--primary-color);
+    --nav-card-hover-text-color: var(--secondary-color);
+    --nav-card-hover-title-color: var(--secondary-color);
+    --nav-card-border: none;
+    --nav-card-hover-border: none;
+    --nav-card-box-shadow: 0 0 8px rgba(var(--primary-color-rgb), 0.25), 0 2px 5px rgba(0,0,0,0.1); /* Red glow */
+    --nav-card-hover-box-shadow: 0 0 12px rgba(var(--primary-color-rgb), 0.4), 0 3px 7px rgba(0,0,0,0.15);
+}
+.contrast-theme .selected-timeline-card {
+    background-color: #dcdcdc !important;
+}
+
+/* Colorless Theme */
+.colorless-theme {
+    --primary-color: #333333; /* dark gray */
+    --primary-color-rgb: 51, 51, 51;
+    --secondary-color: #666666; /* medium gray */
+    --secondary-color-rgb: 102, 102, 102;
+    --accent-color: #999999; /* light gray */
+    --accent-color-rgb: 153, 153, 153;
+    --background-color: #ffffff; /* white background */
+    --text-color: #000000; /* black text */
+    --text-color-rgb: 0, 0, 0;
+    --light-color: #ffffff; /* white */
+    --border-color: #cccccc; /* light gray borders */
+    --h1-underline-color: var(--primary-color);
+
+    --card-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --btn-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* Very subtle dark shadow */
+    --card-background-color: var(--background-color);
+    --background-gradient-other-color: var(--background-color); /* Default to solid color */
+
+    /* Nav Card Specific Variables */
+    --nav-card-bg: linear-gradient(to bottom, #fdfdfd, #fefefe); /* Very subtle off-white gradient */
+    --nav-card-text-color: var(--text-color);
+    --nav-card-title-color: var(--primary-color);
+    --nav-card-hover-text-color: var(--secondary-color);
+    --nav-card-hover-title-color: var(--secondary-color);
+    --nav-card-border: none;
+    --nav-card-hover-border: none;
+    --nav-card-box-shadow: 0 0 6px rgba(var(--primary-color-rgb), 0.15), 0 1px 2px rgba(0,0,0,0.05); /* Subtle gray glow */
+    --nav-card-hover-box-shadow: 0 0 9px rgba(var(--primary-color-rgb), 0.25), 0 2px 4px rgba(0,0,0,0.08);
+}
+.colorless-theme .selected-timeline-card {
+    background-color: #f0f0f0 !important;
+}
+
+html {
+    background: linear-gradient(to bottom, var(--background-gradient-other-color, var(--background-color)), var(--background-color));
+}
+
+body {
+    background: linear-gradient(to bottom, var(--background-gradient-other-color, var(--background-color)), var(--background-color));
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+/* Font families */
+body.font-cozy {
+    font-family: 'Georgia', serif;
+}
+
+body.font-clear {
+    font-family: 'Noto Sans', Arial, sans-serif;
+    font-weight: 300; /* Apply Light 300 weight */
+}
+
+body.font-mono {
+    font-family: 'Courier New', 'Consolas', monospace;
+}
+
+/* Font size classes - applied to body */
+.font-size-smallest {
+    --base-font-size: 0.8rem;
+}
+
+.font-size-smaller {
+    --base-font-size: 0.9rem;
+}
+
+.font-size-medium {
+    --base-font-size: 1rem;
+}
+
+.font-size-larger {
+    --base-font-size: 1.1rem;
+}
+
+.font-size-largest {
+    --base-font-size: 1.2rem;
+}
+
+/* Apply font size to all text elements */
+body {
+    font-size: var(--base-font-size, 1rem) !important; /* Ensure base size applies */
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: calc(var(--base-font-size, 1rem) * 2.2) !important; /* Match section-title */
+    font-weight: bold;
+    font-style: italic; /* Added italic style */
+    color: var(--text-color);
+    margin-bottom: 2.5rem !important; /* Match section-title, increased for more space */
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--h1-underline-color); /* Use new variable and thicker border */
+    display: inline-block; /* To make border only as wide as text */
+}
+
+h2 {
+    font-size: calc(var(--base-font-size, 1rem) * 2) !important;
+    margin-bottom: 0.75rem;
+}
+
+h3, h4, h5 {
+    font-size: calc(var(--base-font-size, 1rem) * 1.5) !important;
+    margin-bottom: 0.5rem;
+}
+/* Default reset for header text-shadow */
+h1, h2, h3, h4, h5 {
+    text-shadow: none;
+}
+/* Afrofuturism theme header glow */
+.afrofuturism-theme h1,
+.afrofuturism-theme h2,
+.afrofuturism-theme h3,
+.afrofuturism-theme h4,
+.afrofuturism-theme h5 {
+    text-shadow: 0 0 8px var(--header-glow-color), 0 0 12px var(--header-glow-color);
+}
+/* Ensure other themes reset the header glow */
+.legacy-theme h1,
+.legacy-theme h2,
+.legacy-theme h3,
+.legacy-theme h4,
+.legacy-theme h5,
+.archive-theme h1,
+.archive-theme h2,
+.archive-theme h3,
+.archive-theme h4,
+.archive-theme h5,
+.contrast-theme h1,
+.contrast-theme h2,
+.contrast-theme h3,
+.contrast-theme h4,
+.contrast-theme h5,
+.colorless-theme h1,
+.colorless-theme h2,
+.colorless-theme h3,
+.colorless-theme h4,
+.colorless-theme h5 {
+    text-shadow: none;
+}
+
+p, li, td, th, input, textarea, label, .btn, .nav-link, .card-title, .lead {
+    font-size: var(--base-font-size, 1rem) !important; /* Apply to common elements and classes */
+}
+
+.lead {
+    font-size: calc(var(--base-font-size, 1rem) * 1.25) !important;
+}
+
+small, .small {
+    font-size: calc(var(--base-font-size, 1rem) * 0.85) !important;
+}
+
+/* Customize the navbar */
+.navbar {
+    background-color: var(--primary-color);
+    background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.05) 0, rgba(255,255,255,0.05) 1px, transparent 1px, transparent 5px);
+    padding: 0.75rem 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: calc(var(--base-font-size, 1rem) * 1.5);
+    color: var(--light-color) !important;
+}
+
+/* Custom logo styling */
+.navbar-brand-custom {
+    position: relative; /* Needed for absolute positioning of pseudo-element */
+    color: white !important; /* White text */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Text shadow for visibility */
+    font-family: 'Playfair Display', serif !important; /* Apply fancy font */
+    font-size: 2rem !important; /* Fixed font size, not affected by accessibility */
+    font-weight: 700 !important; /* Bold font weight */
+    display: inline-block; /* Allow positioning context */
+    z-index: 1; /* Ensure text is above the image */
+    padding-left: 40px; /* Add padding for the image */
+}
+
+.navbar-brand-custom::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    background-image: url('../images/sankofa.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: invert(1); /* Invert image color to white */
+    z-index: -1; /* Place image behind the text */
+}
+
+
+.navbar-nav .nav-link {
+    position: relative;
+    display: inline-block;
+    /* clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%); */ /* Removed diagonal effect */
+    color: var(--light-color) !important;
+    padding: 0.5rem 1rem !important;
+    margin: 0 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background-color: transparent !important;
+    transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease, text-shadow 0.3s ease; /* Added text-shadow transition */
+    border-radius: 25px; /* Default rounded oval shape */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Added text shadow for presence */
+    font-weight: bold; /* Make navbar text bold */
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: var(--light-color) !important; /* Ensure text color remains light on hover */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Slightly enhance shadow on hover */
+    /* filter: brightness(1.2); */ /* Optional: remove or adjust brightness filter */
+    border-radius: 25px; /* Ensure rounded oval shape on hover */
+}
+
+/* Enhanced active navigation state */
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    background-color: var(--secondary-color) !important;
+    color: var(--background-color) !important;
+    /* box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) !important; */ /* Optional: remove or adjust shadow */
+    border-radius: 25px; /* Ensure rounded oval shape for active items */
+}
+
+/* Styling for NavDropdown parent to help with hover gap */
+.navbar-nav .nav-item.dropdown {
+    /* Adding a small bottom margin to the dropdown toggle itself can sometimes help
+       if the issue is the trigger area not extending enough.
+       Alternatively, we adjust the dropdown-menu position. */
+}
+
+/* Dropdown Menu Styling - Glassmorphism */
+.navbar-nav .dropdown-menu {
+    background-color: rgba(var(--primary-color-rgb), 0.3) !important; /* Semi-transparent background based on primary color */
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important; /* For Safari */
+    border: 1px solid rgba(var(--light-color-rgb, 255, 255, 255), 0.18) !important; /* Subtle border */
+    border-radius: 10px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+    padding-top: 0 !important; /* Remove top padding */
+    padding-bottom: 0 !important; /* Remove bottom padding */
+    padding-left: 0 !important; /* Remove side padding if items handle their own */
+    padding-right: 0 !important; /* Remove side padding if items handle their own */
+    margin-top: -2px !important; /* Attempt to close the gap. Adjust as needed. */
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: var(--light-color) !important;
+    background-color: transparent !important;
+    padding: 0.5rem 1rem !important; /* Items will have their own horizontal padding */
+    transition: background-color 0.2s ease, color 0.2s ease, text-shadow 0.2s ease;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.8); /* Omnidirectional text shadow for dropdown items */
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover,
+.navbar-nav .dropdown-menu .dropdown-item:focus {
+    background-color: rgba(var(--light-color-rgb, 255, 255, 255), 0.2) !important;
+    color: var(--light-color) !important; /* Keep text light or adjust as needed */
+}
+
+.navbar-nav .dropdown-menu .dropdown-item.active {
+    background-color: rgba(var(--secondary-color-rgb), 0.5) !important;
+    color: var(--background-color) !important;
+}
+
+/* Gilded Theme Dropdown Overrides for better contrast */
+.gilded-theme .navbar-nav .dropdown-menu {
+    background-color: rgba(var(--primary-color-rgb), 0.65) !important; /* Increased opacity for Gilded theme */
+    /* backdrop-filter and other properties can remain the same or be tweaked if needed */
+}
+
+.gilded-theme .navbar-nav .dropdown-menu .dropdown-item {
+    color: var(--text-color) !important; /* Use darker text color for Gilded theme */
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.3); /* Lighter shadow for dark text if needed, or adjust existing */
+}
+
+.gilded-theme .navbar-nav .dropdown-menu .dropdown-item:hover,
+.gilded-theme .navbar-nav .dropdown-menu .dropdown-item:focus {
+    background-color: rgba(var(--primary-color-rgb), 0.8) !important; /* Darker hover for Gilded */
+    color: var(--text-color) !important;
+}
+
+.gilded-theme .navbar-nav .dropdown-menu .dropdown-item.active {
+    background-color: rgba(var(--secondary-color-rgb), 0.7) !important; /* Adjusted active for Gilded */
+    color: var(--text-color) !important; /* Ensure text is dark */
+}
+
+/* Attempt to standardize dropdown positioning */
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+    left: 50% !important; /* Position the left edge of the menu at the center of the parent toggle */
+    transform: translateX(-50%) !important; /* Shift the menu left by half of its own width */
+    right: auto !important; /* Ensure it doesn't try to align to the right */
+    /* Note: This attempts to center the dropdown menu under its toggle.
+       The visual result can still vary based on the menu's content width. */
+}
+
+/* Footer styling */
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 1.5rem 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+/* Card styling adjustments - removed hover transform effect */
+.card {
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 15px !important;
+    overflow: hidden;
+    box-shadow: var(--card-shadow) !important; /* Ensure custom shadow is applied */
+    transition: box-shadow 0.3s ease;
+    background-color: var(--card-background-color) !important;
+}
+
+.card:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card img:not(.card-content-img) {
+    object-fit: cover;
+    height: 200px;
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.card-title {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+/* Ensure text color within main content and card bodies respects the theme */
+main {
+    color: var(--text-color);
+}
+
+.card-body {
+    color: var(--text-color) !important;
+}
+
+/* Timeline card - special handling */
+.timeline-card img {
+    height: auto; /* Allow full height */
+    object-fit: contain;
+    max-height: none;
+}
+
+/* Timeline selection cards - smaller height */
+.timeline-selection-card img {
+    height: 100px !important; /* Half the standard card image height */
+    object-fit: cover !important; /* Ensure image is cropped to fit */
+    object-position: center; /* Center the image */
+}
+
+/* Button styling */
+.btn {
+    border-radius: 30px;
+    padding: 0.5rem 1.25rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--text-color);
+    border-color: var(--text-color);
+    color: var(--light-color);
+}
+
+.btn-secondary {
+    background-color: var(--accent-color) !important;
+    border-color: var(--accent-color) !important;
+    color: var(--text-color) !important;
+}
+
+.btn-secondary:hover {
+    background-color: var(--text-color) !important;
+    border-color: var(--text-color) !important;
+    color: var(--light-color) !important;
+}
+
+.btn-outline-secondary {
+    border-color: var(--accent-color) !important;
+    color: var(--accent-color) !important;
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--accent-color) !important;
+    color: var(--text-color) !important;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.75rem;
+    font-size: calc(var(--base-font-size, 1rem) * 0.85);
+    border-radius: 20px;
+}
+
+/* Accessibility controls panel */
+.accessibility-toggle {
+    position: fixed;
+    top: 100px; /* Keep top for now, adjust panel position later */
+    right: 20px;
+    z-index: 1010;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    width: auto; /* Auto width for text */
+    height: auto; /* Auto height for text */
+    border-radius: 8px; /* More rounded rectangle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 8px 15px; /* Add padding for text */
+    font-size: 1rem; /* Ensure readable text size */
+    font-weight: 600;
+}
+
+
+.accessibility-panel {
+    position: fixed;
+    top: 150px; /* Adjust top to be below the button (approximate) */
+    right: -360px; /* Wider panel to accommodate larger buttons */
+    width: 360px;
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+}
+
+.accessibility-panel.open {
+    right: 20px;
+}
+
+.accessibility-panel h3 {
+    margin-top: 0;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.accessibility-section {
+    margin-bottom: 15px;
+}
+
+.accessibility-section .buttons-row {
+    display: flex;
+    gap: 5px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+
+/* Styled option buttons */
+.btn-font-size {
+    flex: 1;
+    text-align: center;
+}
+
+.btn-font-size-smallest { font-size: 0.7rem !important; }
+.btn-font-size-smaller { font-size: 0.85rem !important; }
+.btn-font-size-medium { font-size: 1rem !important; }
+.btn-font-size-larger { font-size: 1.15rem !important; }
+.btn-font-size-largest { font-size: 1.3rem !important; }
+
+.btn-font-style {
+    flex: 1;
+    padding: 0.5rem;
+}
+
+.btn-font-style-cozy {
+    font-family: 'Georgia', serif !important;
+}
+
+.btn-font-style-clear {
+    font-family: 'Arial', sans-serif !important;
+}
+
+.btn-font-style-mono {
+    font-family: 'Courier New', 'Consolas', monospace !important;
+}
+
+/* Styles for Theme Swapper */
+.theme-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    text-align: center;
+    animation: fadeEffect 0.5s ease-in-out;
+}
+
+@keyframes fadeEffect {
+    0% { opacity: 0; transform: translateY(-5px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Apply to the element that has BOTH .buttons-row and .theme-circles-row */
+/* Apply to the element that has BOTH .buttons-row and .theme-circles-row */
+.accessibility-section .buttons-row.theme-circles-row {
+    display: flex; /* Explicitly set display */
+    flex-wrap: wrap; /* Explicitly set wrap */
+    gap: 5px; /* Explicitly set gap, should match the general .buttons-row */
+    
+    width: 160px;       /* Target width for 3 buttons (50px each) + 2 gaps (5px each) */
+    min-width: 160px;   /* Force minimum width */
+    max-width: 160px;   /* Force maximum width */
+    
+    box-sizing: border-box;
+    margin-left: auto;   /* Center the block */
+    margin-right: auto;  /* Center the block */
+    padding: 0;          /* Ensure no padding interferes with width */
+    
+    justify-content: center; /* Centers items on a line if not full (e.g., last row of 2) */
+    align-items: flex-start; /* Align rows to the top */
+}
+
+.theme-circle-button {
+    width: 50px; /* Increased size */
+    height: 50px; /* Increased size */
+    border-radius: 50%;
+    border: 3px solid white;
+    cursor: pointer;
+    transition: border-color 0.3s ease, transform 0.2s ease;
+    margin: 0; /* Remove individual margins, rely on parent's gap */
+    padding: 0; /* Remove default button padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    outline: none; /* Remove default focus outline */
+    flex: 0 0 50px; /* flex-grow: 0, flex-shrink: 0, flex-basis: 50px */
+    box-sizing: border-box;
+}
+
+.theme-circle-button:hover {
+    transform: scale(1.1);
+}
+
+.theme-circle-button.active {
+    border-color: black;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); /* Highlight active button */
+    transform: scale(1.05); /* Slightly smaller scale than hover to differentiate */
+}
+
+/* Ensure buttons in the row don't have default button styling if .btn class was previously used */
+.accessibility-section .buttons-row .theme-circle-button {
+    flex: 0 0 auto; /* Don't grow, don't shrink, base on auto size (width/height) */
+    background-color: transparent !important; /* Override any btn background */
+    color: transparent !important; /* Hide any text that might accidentally appear */
+}
+
+/* Custom form styling */
+.form-label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    padding: 0.75rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.2rem rgba(124, 63, 88, 0.25);
+}
+
+/* Tag system styling - unified for both item and submission pages */
+.tag-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 30px;
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--light-color);
+    font-size: calc(var(--base-font-size, 1rem) * 0.85);
+    padding: 0.25rem 0.75rem;
+    border: 1px solid transparent;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    transition: all 0.15s ease-in-out;
+}
+
+.tag-button:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.tag-button.suggest-tag {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.tag-button.suggest-tag:hover {
+    background-color: var(--text-color);
+    border-color: var(--text-color);
+    color: var(--light-color);
+}
+
+.tag-form {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Enhanced table styling */
+.details-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    margin-bottom: 2rem;
+}
+
+.details-table th,
+.details-table td {
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    background-color: var(--card-background-color) !important; /* Use card background */
+    color: var(--text-color) !important; /* Ensure text color matches theme */
+}
+
+.details-table th {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    font-weight: 600;
+    text-align: left;
+    width: 25%;
+}
+
+/* Removed alternating row background */
+
+/* Item details button styling */
+.item-details-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    padding: 0.6rem 1.5rem;
+    border-radius: 30px;
+    border: none;
+    margin: 1rem 0;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.item-details-button:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.item-details-button::after {
+    content: '';
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-left: 10px;
+    border-right: 2px solid var(--light-color);
+    border-bottom: 2px solid var(--light-color);
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+.item-details-button.collapsed::after {
+    transform: rotate(-135deg);
+}
+
+/* Example submission styling */
+.example-toggle {
+    width: 100%;
+    text-align: left;
+    background-color: rgba(0,0,0,0.05);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.example-toggle:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.example-toggle i {
+    margin-right: 8px;
+}
+
+.example-toggle strong {
+    color: var(--primary-color);
+}
+
+.example-submission {
+    background-color: rgba(208, 241, 255, 0.2);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+}
+
+.example-submission.show {
+    display: block;
+}
+
+.example-header {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.example-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.example-side {
+    flex: 1 1 48%;
+    padding: 1.5rem;
+    min-width: 300px;
+}
+
+.example-side:first-child {
+    border-right: 1px dashed var(--border-color);
+}
+
+.example-side h4 {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.example-side img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Tags list for search/filter */
+.popular-tags {
+    margin: 1rem 0;
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 0.5rem;
+}
+
+.tag-count {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 0.75rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+/* Compact filter section */
+.filter-section {
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.filter-section h6 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.filter-section .form-check {
+    margin-bottom: 5px;
+}
+
+.search-filters-row .card {
+    height: 100%;
+}
+
+/* For screen readers only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Rounded images throughout the site */
+img {
+    border-radius: 8px;
+}
+
+/* Card content images - for images inside card body that need rounded corners all around */
+.card-body .card-content-img,
+.card .card-body img.card-content-img {
+    border-radius: 15px !important; /* Override the default card img styling */
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+    object-fit: contain !important;
+    max-height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+
+/* Partner organization logos - specific styling for consistent height and positioning */
+.partner-logo {
+    height: 200px !important; /* Fixed height for all partner logos */
+    max-width: 100% !important; /* Ensure it doesn't exceed the card width */
+    width: auto !important;
+    object-fit: contain !important;
+    padding: 10px !important;
+    margin: 0 auto !important; /* Center horizontally */
+    display: block !important; /* Changed from flex to block */
+}
+
+/* Container for partner logos to ensure proper centering and containment */
+.card-img-bottom.partner-logo {
+    overflow: hidden !important;
+    text-align: center !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .example-side {
+        flex: 1 1 100%;
+    }
+    .example-side:first-child {
+        border-right: none;
+        border-bottom: 1px dashed var(--border-color);
+    }
+    .accessibility-panel {
+        width: 300px;
+    }
+    .buttons-row button {
+        font-size: smaller;
+        padding: 0.25rem 0.5rem;
+    }
+}
+/* Styling for exhibit images */
+.exhibit-image {
+    max-height: 600px;
+    width: auto; /* Allow width to be determined by aspect ratio and max-height */
+    max-width: 100%; /* Ensure image does not exceed container width */
+    object-fit: contain; /* Maintain aspect ratio while containing within the area */
+    border-radius: 8px; /* Apply rounded corners */
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.25), 0 10px 20px rgba(0, 0, 0, 0.22); /* More noticeable shadow */
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.exhibit-image:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 20px 50px rgba(0, 0, 0, 0.28); /* More noticeable enhanced shadow on hover */
+}
+/* Styling for the exhibit gallery container */
+.exhibit-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the images in the row */
+}
+/* Styling for exhibit gallery links */
+.exhibit-gallery a {
+    display: inline-block; /* Allow links to wrap and size based on content */
+}
+/* Ensure text color within timeline card follows theme */
+.timeline-card h3,
+.timeline-card p {
+    color: var(--text-color) !important;
+}
+/* Custom styling for info alerts */
+.alert-info {
+    background-color: var(--accent-color) !important;
+    border-color: var(--accent-color) !important;
+    color: var(--light-color) !important;
+}
+
+/* Custom styling for subtle info alerts */
+.alert-subtle-info {
+    background-color: rgba(var(--accent-color-rgb, 90, 76, 187), 0.3) !important; /* 30% opacity for accent color */
+    border-color: rgba(var(--accent-color-rgb, 90, 76, 187), 0.4) !important; /* 40% opacity for border */
+    color: var(--text-color) !important; /* Use theme text color for better readability on lighter bg */
+    font-style: italic;
+}
+/* Ensure text color for form elements within card bodies follows theme */
+.card-body p,
+.card-body label,
+.card-body input,
+.card-body textarea,
+.card-body select {
+    color: var(--text-color) !important;
+}
+/* Ensure h3 color within card headers follows theme */
+.card-header h3 {
+    color: var(--text-color) !important;
+}
+/* Ensure icon color within card headers follows theme */
+.card-header i {
+    color: var(--text-color) !important;
+}
+/* Ensure text color in form inputs is dark for readability */
+input:not([type="button"]):not([type="submit"]):not([type="reset"]):not([type="checkbox"]):not([type="radio"]),
+textarea,
+select {
+    color: #000000 !important;
+}
+/* Ensure text color in select options is dark for readability */
+select option {
+    color: #000000 !important;
+}
+/* Style breadcrumbs - Targeted !important */
+.breadcrumb {
+  --bs-breadcrumb-divider: '/'; /* Add slash separator */
+}
+
+/* Style the divider */
+.breadcrumb .breadcrumb-item::before {
+    color: var(--text-color) !important; /* Force theme text color for separator */
+}
+
+/* Style the links (Reverted to no !important) */
+.breadcrumb .breadcrumb-item a {
+  color: var(--text-color); /* Use theme text color for links */
+  text-decoration: none;
+}
+
+.breadcrumb .breadcrumb-item a:hover {
+  color: var(--bs-primary); /* Use primary theme color on hover */
+  text-decoration: underline;
+}
+
+/* Style the active (non-link) breadcrumb item */
+.breadcrumb .breadcrumb-item.active {
+  color: var(--text-color) !important; /* Force theme text color */
+}
+/* Social media icon styling */
+.social-icon-link,
+.social-icon-link:visited,
+.social-icon-link:active,
+.social-icon-link.active { /* Explicitly target any .active class that might be applied */
+    color: var(--light-color) !important; /* Match navbar text color */
+    background-color: transparent !important; /* Ensure no background color on active/visited */
+    box-shadow: none !important; /* Remove any box-shadow */
+    font-weight: normal !important; /* Ensure font weight is normal */
+    margin-left: 0.25rem; /* Reduced space out icons */
+    transition: color 0.3s ease;
+}
+
+.social-icon-link:hover {
+    color: var(--accent-color) !important; /* Change color on hover */
+    background-color: transparent !important; /* Ensure no background change on hover */
+}
+/* Add spacing below the main page header */
+main > .container > * > :is(h1, h2, h3, h4, h5, h6):first-child {
+    margin-bottom: 3rem;
+}
+/* Navigation Cards on Home Page - Image Background Style */
+.nav-card {
+    position: relative;
+    border-radius: 15px !important;
+    overflow: hidden;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Adjusted transitions */
+    cursor: pointer;
+    border: var(--nav-card-border, none) !important; /* Use variable, default none */
+    margin-bottom: 0 !important; /* Override default card margin to let Bootstrap gutters control spacing */
+    background: var(--nav-card-bg, var(--card-background-color)) !important; /* Use variable, changed to background shorthand */
+    box-shadow: var(--nav-card-box-shadow, 0 1px 3px rgba(0,0,0,0.04)) !important; /* Default shadow if var not set */
+}
+
+.nav-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: none; /* Remove gradient */
+    z-index: 0;
+    border-radius: inherit;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Ensure it doesn't interfere with clicks */
+}
+
+.nav-card:hover::before {
+    opacity: 1; /* No visual change if ::before has no background */
+}
+
+.nav-card:hover {
+    /* transform: scale(1.03); */ /* Removed for less buttony feel */
+    box-shadow: var(--nav-card-hover-box-shadow, 0 2px 5px rgba(0,0,0,0.07)) !important; /* Default hover shadow if var not set */
+    border: var(--nav-card-hover-border, none) !important; /* Use variable, default none */
+}
+
+/* Ensure other pseudo-elements (like from old neumorphic) are explicitly off */
+.nav-card::after {
+    content: none !important;
+}
+
+.nav-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background-color: transparent !important; /* Remove overlay */
+    /* border-radius for card-body might not be needed if card itself is rounded and body is transparent */
+}
+
+/* Removed .nav-card-text-box rule */
+
+.nav-card .card-title {
+    font-size: calc(var(--base-font-size, 1rem) * 1.3) !important;
+    font-weight: bold;
+    color: var(--nav-card-title-color, var(--text-color)) !important; /* Use variable */
+    text-shadow: none; /* Removed shadow */
+    margin-bottom: 0.4rem !important;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.nav-card .card-text {
+    font-size: calc(var(--base-font-size, 1rem) * 0.85) !important;
+    color: var(--nav-card-text-color, var(--text-color)) !important; /* Use variable */
+    margin-bottom: 0 !important;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+/* Hover effects for text to make it link-like */
+.nav-card:hover .card-title {
+    color: var(--nav-card-hover-title-color, var(--primary-color)) !important;
+    text-decoration: underline;
+}
+
+.nav-card:hover .card-text {
+    color: var(--nav-card-hover-text-color, var(--primary-color)) !important;
+    text-decoration: underline;
+}
+/* Styles for selected timeline cards */
+/* .selected-timeline-card is now defined per-theme */
+
+.selected-timeline-title {
+    font-style: italic;
+    font-size: 1.25rem; /* Bigger text */
+}
+/* Remnant Timeline Styles */
+.remnant-timeline-card-outer {
+    /* Potentially add max-height and overflow-y if needed for the whole card,
+       but prefer scrolling within the timeline-section itself. */
+}
+
+.remnant-timeline-card-body {
+    padding: 0 !important; /* Remove padding to allow timeline to use full space */
+}
+
+.remnant-timeline-container {
+    display: flex;
+    font-family: 'Exo 2', sans-serif;
+    line-height: 1.5;
+    height: 500px; /* Define a fixed height for the scrollable timeline area */
+    overflow: hidden; /* Clip content outside this height */
+    position: relative; /* For positioning nav and section */
+    border: 1px solid var(--border-color); /* Optional: border around the timeline itself */
+    border-radius: inherit; /* Inherit border-radius from parent card */
+}
+
+.remnant-timeline__nav {
+    position: sticky; /* Sticks to the left of the container */
+    top: 0; /* Aligns to the top of the container */
+    left: 0;
+    height: 100%; /* Takes full height of the container */
+    overflow-y: auto; /* Allows scrolling for nav items if they exceed height */
+    padding: 15px 15px 15px 10px; /* Adjusted padding for right side */
+    background-color: var(--card-background-color); /* Match card background */
+    z-index: 10; /* Ensure nav is above section content during scroll */
+    width: fit-content; /* Dynamically adjust width to content */
+    min-width: 150px; /* Ensure a minimum reasonable width */
+    /* border-right: 1px solid var(--border-color); Removed vertical divider */
+    /* Hide scrollbar for Webkit browsers */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.remnant-timeline__nav::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+.remnant-timeline__nav ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.remnant-timeline__nav li {
+    margin: 0; /* Remove vertical margin, rely on padding */
+    padding: 10px 15px; /* Increased padding */
+    list-style-type: none;
+    color: var(--text-color); /* Use theme text color */
+    /* Fainter border using rgba with low alpha */
+    border-bottom: 1px solid rgba(var(--text-color-rgb, 221, 221, 221), 0.15);
+    cursor: pointer;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out, border-left-color 0.2s ease-out;
+    font-size: 1rem; /* Slightly increased font size */
+    position: relative;
+    border-left: 3px solid transparent; /* For active state accent */
+}
+
+.remnant-timeline__nav li:last-child {
+    border-bottom: none; /* Remove border from last item */
+}
+
+.remnant-timeline__nav li.active {
+    font-weight: bold;
+    color: var(--accent-color); /* Use theme accent color */
+    background-color: rgba(var(--accent-color-rgb, 80, 80, 180), 0.1); /* Subtle background for active */
+    border-left: 3px solid var(--accent-color);
+    /* transform: scale(1.05); Remove scaling for a cleaner look */
+    /* border-bottom-color: transparent; /* No longer needed as border is faint */
+}
+
+.remnant-timeline__nav li:hover:not(.active) {
+    background-color: rgba(var(--primary-color-rgb, 146, 96, 1), 0.1); /* Subtle hover background */
+    color: var(--primary-color); /* Use theme primary color on hover */
+    border-left: 3px solid var(--primary-color);
+}
+
+.remnant-timeline__section {
+    flex-grow: 1; /* Takes remaining space */
+    overflow-y: auto; /* This is the main scrollable area for content */
+    height: 100%; /* Takes full height of the container */
+    padding: 0; /* Reset padding */
+    position: relative; /* For absolute positioning of items if needed, or scroll calculations */
+}
+
+.remnant-timeline__content-wrapper {
+    padding: 20px; /* Add padding inside the scrollable section */
+}
+
+.remnant-timeline__item {
+    position: relative; /* Keep for potential future use */
+    padding-left: 0; /* Reset padding */
+    margin-bottom: 40px; /* Increased separation */
+    border-left: none; /* Remove timeline vertical line */
+}
+
+/* Removed ::before rule for the marker */
+
+.remnant-timeline__item:first-child {
+    padding-top: 10px; /* Add some space above the first item */
+}
+.remnant-timeline__item:last-child {
+    /* border-left: none; /* Already removed */
+    padding-bottom: 0;
+    margin-bottom: 10px; /* Reduce margin for the last item */
+}
+
+
+.remnant-timeline__item h2.remnant-timeline__milestone {
+    font-size: calc(var(--base-font-size, 1rem) * 1.6); /* Increased emphasis */
+    color: var(--primary-color); /* Use theme primary color */
+    margin-bottom: 0.75rem; /* More space below milestone */
+    font-family: 'Exo 2', sans-serif; /* Ensure font */
+    font-weight: 700; /* Bolder milestone */
+}
+
+.remnant-timeline__item p {
+    font-size: calc(var(--base-font-size, 1rem) * 1); /* Standardized paragraph size */
+    color: var(--text-color); /* Use theme text color */
+    margin-bottom: 0.75rem; /* Consistent paragraph spacing */
+    font-family: 'Exo 2', sans-serif; /* Ensure font */
+    line-height: 1.7; /* Improved readability */
+}
+
+/* Ensure the card title for the timeline details is visible and styled */
+.remnant-timeline-card-outer .card-title {
+    padding: 1rem 1.25rem; /* Add back padding for the title if card-body padding is removed */
+    margin-bottom: 0; /* Adjust as needed */
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--card-background-color);
+}
+.remnant-timeline__header {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-left: none;
+}
+
+.remnant-timeline__header .remnant-timeline__milestone {
+    font-size: 1.5em;
+    color: #333;
+}
+/* Additional Neumorphic Card Styles (for future use) */
+
+/* nav-card-inset */
+.nav-card-inset:hover::after {
+    opacity: 1;
+}
+
+.nav-card-inset::after {
+    box-shadow: 14px 14px 14px var(--neumorphic-shadow1) inset,
+                -20px -20px 20px var(--neumorphic-shadow2) inset;
+}
+
+/* nav-card-animated */
+/* here we have both before- and after-
+pseudo-elements; animating both one normal, one reversed,
+so that it (sorta) appears like the card's moving
+in and out of the screen */
+.nav-card-animated::before {
+    border-radius: inherit;
+    z-index: -1;
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.3;
+}
+
+.nav-card-animated::before {
+    box-shadow: 14px 14px 14px hsl(var(--neumorphic-anim-shadow1-hsl) / 0.1) inset,
+                -20px -20px 20px hsl(var(--neumorphic-anim-shadow2-hsl) / 1) inset;
+    animation: toggle_inset 2.2s alternate infinite cubic-bezier(0.8, 0, 0.2, 1);
+}
+
+.nav-card-animated::after {
+    box-shadow: 14px 14px 14px hsl(var(--neumorphic-anim-shadow1-hsl) / 0.1),
+                -20px -20px 20px hsl(var(--neumorphic-anim-shadow2-hsl) / 1);
+    animation: toggle_inset 2.2s alternate-reverse infinite
+                cubic-bezier(0.8, 0, 0.2, 1);
+}
+
+@keyframes toggle_inset {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Note: toggle_not_inset keyframes from example are not directly used by nav-card-animated,
+   but included here if needed for other animated effects. */
+@keyframes toggle_not_inset {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+/* Home Page Section Titles */
+.section-title {
+    font-size: calc(var(--base-font-size, 1rem) * 2.2) !important; /* Slightly smaller than h1 */
+    font-weight: bold;
+/* Two-row desktop navbar layout */
+.navbar .navbar-rows {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.navbar-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.25rem 0;
+}
+.navbar-row-core {
+    margin-bottom: 0.5rem;
+}
+.core-links,
+.secondary-links,
+.social-icons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.core-links .nav-link,
+.secondary-links .nav-link {
+    white-space: nowrap;
+    margin: 0 0.5rem !important;
+}
+.social-icons .nav-link {
+    margin: 0 0.25rem;
+}
+    color: var(--text-color);
+    margin-bottom: 2rem !important; /* More space below title */
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block; /* To make border only as wide as text */
+}

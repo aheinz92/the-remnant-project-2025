@@ -1,0 +1,1008 @@
+Folder PATH listing for volume TeamGroup MP44 #1
+Volume serial number is 7436-0955
+H:.
++---.idea
++---database work
++---node_modules
+¦   +---@types
+¦   ¦   +---cookie
+¦   +---cookie
+¦   ¦   +---dist
+¦   +---react
+¦   ¦   +---cjs
+¦   +---react-dom
+¦   ¦   +---cjs
+¦   +---react-router
+¦   ¦   +---dist
+¦   ¦       +---development
+¦   ¦       ¦   +---lib
+¦   ¦       ¦       +---types
+¦   ¦       +---production
+¦   ¦           +---lib
+¦   ¦               +---types
+¦   +---react-router-dom
+¦   ¦   +---dist
+¦   +---scheduler
+¦   ¦   +---cjs
+¦   +---set-cookie-parser
+¦   ¦   +---lib
+¦   +---turbo-stream
+¦       +---dist
++---site-prototype
+¦   +---css
+¦   +---images
++---site-prototype-react
+    +---.react-router
+    ¦   +---types
+    ¦       +---app
+    ¦           +---+types
+    ¦           +---routes
+    ¦               +---+types
+    +---app
+    ¦   +---routes
+    ¦   +---welcome
+    +---dist
+    ¦   +---assets
+    +---node_modules
+    ¦   +---.bin
+    ¦   +---.cache
+    ¦   ¦   +---gh-pages
+    ¦   ¦       +---https!github.com!eunjiii-2029344!The-Remnant-Project
+    ¦   ¦           +---.idea
+    ¦   ¦           +---assets
+    ¦   ¦           +---node_modules
+    ¦   ¦           +---site-prototype-react
+    ¦   +---.vite
+    ¦   ¦   +---deps
+    ¦   +---@babel
+    ¦   ¦   +---runtime
+    ¦   ¦       +---helpers
+    ¦   ¦       ¦   +---esm
+    ¦   ¦       +---regenerator
+    ¦   +---@esbuild
+    ¦   ¦   +---win32-x64
+    ¦   +---@fortawesome
+    ¦   ¦   +---fontawesome-free
+    ¦   ¦       +---css
+    ¦   ¦       +---js
+    ¦   ¦       +---less
+    ¦   ¦       +---metadata
+    ¦   ¦       +---scss
+    ¦   ¦       +---sprites
+    ¦   ¦       +---svgs
+    ¦   ¦       ¦   +---brands
+    ¦   ¦       ¦   +---regular
+    ¦   ¦       ¦   +---solid
+    ¦   ¦       +---webfonts
+    ¦   +---@nodelib
+    ¦   ¦   +---fs.scandir
+    ¦   ¦   ¦   +---out
+    ¦   ¦   ¦       +---adapters
+    ¦   ¦   ¦       +---providers
+    ¦   ¦   ¦       +---types
+    ¦   ¦   ¦       +---utils
+    ¦   ¦   +---fs.stat
+    ¦   ¦   ¦   +---out
+    ¦   ¦   ¦       +---adapters
+    ¦   ¦   ¦       +---providers
+    ¦   ¦   ¦       +---types
+    ¦   ¦   +---fs.walk
+    ¦   ¦       +---out
+    ¦   ¦           +---providers
+    ¦   ¦           +---readers
+    ¦   ¦           +---types
+    ¦   +---@popperjs
+    ¦   ¦   +---core
+    ¦   ¦       +---dist
+    ¦   ¦       ¦   +---cjs
+    ¦   ¦       ¦   +---esm
+    ¦   ¦       ¦   ¦   +---dom-utils
+    ¦   ¦       ¦   ¦   +---modifiers
+    ¦   ¦       ¦   ¦   +---utils
+    ¦   ¦       ¦   +---umd
+    ¦   ¦       +---lib
+    ¦   ¦           +---dom-utils
+    ¦   ¦           +---modifiers
+    ¦   ¦           +---utils
+    ¦   +---@react-aria
+    ¦   ¦   +---ssr
+    ¦   ¦       +---dist
+    ¦   ¦       +---src
+    ¦   +---@restart
+    ¦   ¦   +---hooks
+    ¦   ¦   ¦   +---cjs
+    ¦   ¦   ¦   +---esm
+    ¦   ¦   ¦   +---useAnimationFrame
+    ¦   ¦   ¦   +---useBreakpoint
+    ¦   ¦   ¦   +---useCallbackRef
+    ¦   ¦   ¦   +---useCommittedRef
+    ¦   ¦   ¦   +---useCustomEffect
+    ¦   ¦   ¦   +---useDebouncedCallback
+    ¦   ¦   ¦   +---useDebouncedState
+    ¦   ¦   ¦   +---useDebouncedValue
+    ¦   ¦   ¦   +---useEventCallback
+    ¦   ¦   ¦   +---useEventListener
+    ¦   ¦   ¦   +---useFocusManager
+    ¦   ¦   ¦   +---useForceUpdate
+    ¦   ¦   ¦   +---useGlobalListener
+    ¦   ¦   ¦   +---useImage
+    ¦   ¦   ¦   +---useImmediateUpdateEffect
+    ¦   ¦   ¦   +---useIntersectionObserver
+    ¦   ¦   ¦   +---useInterval
+    ¦   ¦   ¦   +---useIsInitialRenderRef
+    ¦   ¦   ¦   +---useIsomorphicEffect
+    ¦   ¦   ¦   +---useMap
+    ¦   ¦   ¦   +---useMediaQuery
+    ¦   ¦   ¦   +---useMergedRefs
+    ¦   ¦   ¦   +---useMergeState
+    ¦   ¦   ¦   +---useMergeStateFromProps
+    ¦   ¦   ¦   +---useMounted
+    ¦   ¦   ¦   +---useMountEffect
+    ¦   ¦   ¦   +---useMutationObserver
+    ¦   ¦   ¦   +---usePrevious
+    ¦   ¦   ¦   +---useRafInterval
+    ¦   ¦   ¦   +---useRefWithInitialValueFactory
+    ¦   ¦   ¦   +---useResizeObserver
+    ¦   ¦   ¦   +---useSafeState
+    ¦   ¦   ¦   +---useSet
+    ¦   ¦   ¦   +---useStableMemo
+    ¦   ¦   ¦   +---useStateAsync
+    ¦   ¦   ¦   +---useThrottledEventHandler
+    ¦   ¦   ¦   +---useTimeout
+    ¦   ¦   ¦   +---useToggleState
+    ¦   ¦   ¦   +---useUpdatedRef
+    ¦   ¦   ¦   +---useUpdateEffect
+    ¦   ¦   ¦   +---useUpdateImmediateEffect
+    ¦   ¦   ¦   +---useUpdateLayoutEffect
+    ¦   ¦   ¦   +---useWillUnmount
+    ¦   ¦   +---ui
+    ¦   ¦       +---Anchor
+    ¦   ¦       +---Button
+    ¦   ¦       +---cjs
+    ¦   ¦       +---DataKey
+    ¦   ¦       +---Dropdown
+    ¦   ¦       +---DropdownContext
+    ¦   ¦       +---DropdownItem
+    ¦   ¦       +---DropdownMenu
+    ¦   ¦       +---DropdownToggle
+    ¦   ¦       +---esm
+    ¦   ¦       +---getScrollbarWidth
+    ¦   ¦       +---ImperativeTransition
+    ¦   ¦       +---mergeOptionsWithPopperConfig
+    ¦   ¦       +---Modal
+    ¦   ¦       +---ModalManager
+    ¦   ¦       +---Nav
+    ¦   ¦       +---NavContext
+    ¦   ¦       +---NavItem
+    ¦   ¦       +---node_modules
+    ¦   ¦       ¦   +---@restart
+    ¦   ¦       ¦   ¦   +---hooks
+    ¦   ¦       ¦   ¦       +---cjs
+    ¦   ¦       ¦   ¦       +---esm
+    ¦   ¦       ¦   ¦       +---useAnimationFrame
+    ¦   ¦       ¦   ¦       +---useBreakpoint
+    ¦   ¦       ¦   ¦       +---useCallbackRef
+    ¦   ¦       ¦   ¦       +---useCommittedRef
+    ¦   ¦       ¦   ¦       +---useCustomEffect
+    ¦   ¦       ¦   ¦       +---useDebouncedCallback
+    ¦   ¦       ¦   ¦       +---useDebouncedState
+    ¦   ¦       ¦   ¦       +---useDebouncedValue
+    ¦   ¦       ¦   ¦       +---useEventCallback
+    ¦   ¦       ¦   ¦       +---useEventListener
+    ¦   ¦       ¦   ¦       +---useFocusManager
+    ¦   ¦       ¦   ¦       +---useForceUpdate
+    ¦   ¦       ¦   ¦       +---useGlobalListener
+    ¦   ¦       ¦   ¦       +---useImage
+    ¦   ¦       ¦   ¦       +---useImmediateUpdateEffect
+    ¦   ¦       ¦   ¦       +---useIntersectionObserver
+    ¦   ¦       ¦   ¦       +---useInterval
+    ¦   ¦       ¦   ¦       +---useIsInitialRenderRef
+    ¦   ¦       ¦   ¦       +---useIsomorphicEffect
+    ¦   ¦       ¦   ¦       +---useMap
+    ¦   ¦       ¦   ¦       +---useMediaQuery
+    ¦   ¦       ¦   ¦       +---useMergedRefs
+    ¦   ¦       ¦   ¦       +---useMergeState
+    ¦   ¦       ¦   ¦       +---useMergeStateFromProps
+    ¦   ¦       ¦   ¦       +---useMounted
+    ¦   ¦       ¦   ¦       +---useMountEffect
+    ¦   ¦       ¦   ¦       +---useMutationObserver
+    ¦   ¦       ¦   ¦       +---usePrevious
+    ¦   ¦       ¦   ¦       +---useRafInterval
+    ¦   ¦       ¦   ¦       +---useRefWithInitialValueFactory
+    ¦   ¦       ¦   ¦       +---useResizeObserver
+    ¦   ¦       ¦   ¦       +---useSafeState
+    ¦   ¦       ¦   ¦       +---useSet
+    ¦   ¦       ¦   ¦       +---useStableMemo
+    ¦   ¦       ¦   ¦       +---useStateAsync
+    ¦   ¦       ¦   ¦       +---useThrottledEventHandler
+    ¦   ¦       ¦   ¦       +---useTimeout
+    ¦   ¦       ¦   ¦       +---useToggleState
+    ¦   ¦       ¦   ¦       +---useUpdatedRef
+    ¦   ¦       ¦   ¦       +---useUpdateEffect
+    ¦   ¦       ¦   ¦       +---useUpdateImmediateEffect
+    ¦   ¦       ¦   ¦       +---useUpdateLayoutEffect
+    ¦   ¦       ¦   ¦       +---useWillUnmount
+    ¦   ¦       ¦   +---dom-helpers
+    ¦   ¦       ¦   ¦   +---activeElement
+    ¦   ¦       ¦   ¦   +---addClass
+    ¦   ¦       ¦   ¦   +---addEventListener
+    ¦   ¦       ¦   ¦   +---animate
+    ¦   ¦       ¦   ¦   +---animationFrame
+    ¦   ¦       ¦   ¦   +---attribute
+    ¦   ¦       ¦   ¦   +---camelize
+    ¦   ¦       ¦   ¦   +---camelizeStyle
+    ¦   ¦       ¦   ¦   +---canUseDOM
+    ¦   ¦       ¦   ¦   +---childElements
+    ¦   ¦       ¦   ¦   +---childNodes
+    ¦   ¦       ¦   ¦   +---cjs
+    ¦   ¦       ¦   ¦   +---clear
+    ¦   ¦       ¦   ¦   +---closest
+    ¦   ¦       ¦   ¦   +---collectElements
+    ¦   ¦       ¦   ¦   +---collectSiblings
+    ¦   ¦       ¦   ¦   +---contains
+    ¦   ¦       ¦   ¦   +---css
+    ¦   ¦       ¦   ¦   +---esm
+    ¦   ¦       ¦   ¦   +---filterEventHandler
+    ¦   ¦       ¦   ¦   +---getComputedStyle
+    ¦   ¦       ¦   ¦   +---getScrollAccessor
+    ¦   ¦       ¦   ¦   +---hasClass
+    ¦   ¦       ¦   ¦   +---height
+    ¦   ¦       ¦   ¦   +---hyphenate
+    ¦   ¦       ¦   ¦   +---hyphenateStyle
+    ¦   ¦       ¦   ¦   +---insertAfter
+    ¦   ¦       ¦   ¦   +---isDocument
+    ¦   ¦       ¦   ¦   +---isInput
+    ¦   ¦       ¦   ¦   +---isTransform
+    ¦   ¦       ¦   ¦   +---isVisible
+    ¦   ¦       ¦   ¦   +---isWindow
+    ¦   ¦       ¦   ¦   +---listen
+    ¦   ¦       ¦   ¦   +---matches
+    ¦   ¦       ¦   ¦   +---nextUntil
+    ¦   ¦       ¦   ¦   +---offset
+    ¦   ¦       ¦   ¦   +---offsetParent
+    ¦   ¦       ¦   ¦   +---ownerDocument
+    ¦   ¦       ¦   ¦   +---ownerWindow
+    ¦   ¦       ¦   ¦   +---parents
+    ¦   ¦       ¦   ¦   +---position
+    ¦   ¦       ¦   ¦   +---prepend
+    ¦   ¦       ¦   ¦   +---querySelectorAll
+    ¦   ¦       ¦   ¦   +---remove
+    ¦   ¦       ¦   ¦   +---removeClass
+    ¦   ¦       ¦   ¦   +---removeEventListener
+    ¦   ¦       ¦   ¦   +---scrollbarSize
+    ¦   ¦       ¦   ¦   +---scrollLeft
+    ¦   ¦       ¦   ¦   +---scrollParent
+    ¦   ¦       ¦   ¦   +---scrollTo
+    ¦   ¦       ¦   ¦   +---scrollTop
+    ¦   ¦       ¦   ¦   +---siblings
+    ¦   ¦       ¦   ¦   +---text
+    ¦   ¦       ¦   ¦   +---toggleClass
+    ¦   ¦       ¦   ¦   +---transitionEnd
+    ¦   ¦       ¦   ¦   +---triggerEvent
+    ¦   ¦       ¦   ¦   +---width
+    ¦   ¦       ¦   +---uncontrollable
+    ¦   ¦       ¦   ¦   +---lib
+    ¦   ¦       ¦   ¦   ¦   +---cjs
+    ¦   ¦       ¦   ¦   ¦   +---esm
+    ¦   ¦       ¦   ¦   +---test
+    ¦   ¦       ¦   +---warning
+    ¦   ¦       +---NoopTransition
+    ¦   ¦       +---Overlay
+    ¦   ¦       +---popper
+    ¦   ¦       +---Portal
+    ¦   ¦       +---RTGTransition
+    ¦   ¦       +---SelectableContext
+    ¦   ¦       +---ssr
+    ¦   ¦       +---TabContext
+    ¦   ¦       +---TabPanel
+    ¦   ¦       +---Tabs
+    ¦   ¦       +---types
+    ¦   ¦       +---useClickOutside
+    ¦   ¦       +---usePopper
+    ¦   ¦       +---useRootClose
+    ¦   ¦       +---useRTGTransitionProps
+    ¦   ¦       +---useScrollParent
+    ¦   ¦       +---useWaitForDOMRef
+    ¦   ¦       +---useWaypoint
+    ¦   ¦       +---useWindow
+    ¦   ¦       +---utils
+    ¦   ¦       +---Waypoint
+    ¦   +---@rollup
+    ¦   ¦   +---rollup-win32-x64-msvc
+    ¦   +---@swc
+    ¦   ¦   +---helpers
+    ¦   ¦       +---cjs
+    ¦   ¦       +---esm
+    ¦   ¦       +---scripts
+    ¦   ¦       +---src
+    ¦   ¦       +---_
+    ¦   ¦           +---index
+    ¦   ¦           +---_apply_decorated_descriptor
+    ¦   ¦           +---_apply_decs_2203_r
+    ¦   ¦           +---_array_like_to_array
+    ¦   ¦           +---_array_without_holes
+    ¦   ¦           +---_array_with_holes
+    ¦   ¦           +---_assert_this_initialized
+    ¦   ¦           +---_async_generator
+    ¦   ¦           +---_async_generator_delegate
+    ¦   ¦           +---_async_iterator
+    ¦   ¦           +---_async_to_generator
+    ¦   ¦           +---_await_async_generator
+    ¦   ¦           +---_await_value
+    ¦   ¦           +---_call_super
+    ¦   ¦           +---_check_private_redeclaration
+    ¦   ¦           +---_class_apply_descriptor_destructure
+    ¦   ¦           +---_class_apply_descriptor_get
+    ¦   ¦           +---_class_apply_descriptor_set
+    ¦   ¦           +---_class_apply_descriptor_update
+    ¦   ¦           +---_class_call_check
+    ¦   ¦           +---_class_check_private_static_access
+    ¦   ¦           +---_class_check_private_static_field_descriptor
+    ¦   ¦           +---_class_extract_field_descriptor
+    ¦   ¦           +---_class_name_tdz_error
+    ¦   ¦           +---_class_private_field_destructure
+    ¦   ¦           +---_class_private_field_get
+    ¦   ¦           +---_class_private_field_init
+    ¦   ¦           +---_class_private_field_loose_base
+    ¦   ¦           +---_class_private_field_loose_key
+    ¦   ¦           +---_class_private_field_set
+    ¦   ¦           +---_class_private_field_update
+    ¦   ¦           +---_class_private_method_get
+    ¦   ¦           +---_class_private_method_init
+    ¦   ¦           +---_class_private_method_set
+    ¦   ¦           +---_class_static_private_field_destructure
+    ¦   ¦           +---_class_static_private_field_spec_get
+    ¦   ¦           +---_class_static_private_field_spec_set
+    ¦   ¦           +---_class_static_private_field_update
+    ¦   ¦           +---_class_static_private_method_get
+    ¦   ¦           +---_construct
+    ¦   ¦           +---_create_class
+    ¦   ¦           +---_create_for_of_iterator_helper_loose
+    ¦   ¦           +---_create_super
+    ¦   ¦           +---_decorate
+    ¦   ¦           +---_defaults
+    ¦   ¦           +---_define_enumerable_properties
+    ¦   ¦           +---_define_property
+    ¦   ¦           +---_dispose
+    ¦   ¦           +---_export_star
+    ¦   ¦           +---_extends
+    ¦   ¦           +---_get
+    ¦   ¦           +---_get_prototype_of
+    ¦   ¦           +---_identity
+    ¦   ¦           +---_inherits
+    ¦   ¦           +---_inherits_loose
+    ¦   ¦           +---_initializer_define_property
+    ¦   ¦           +---_initializer_warning_helper
+    ¦   ¦           +---_instanceof
+    ¦   ¦           +---_interop_require_default
+    ¦   ¦           +---_interop_require_wildcard
+    ¦   ¦           +---_is_native_function
+    ¦   ¦           +---_is_native_reflect_construct
+    ¦   ¦           +---_iterable_to_array
+    ¦   ¦           +---_iterable_to_array_limit
+    ¦   ¦           +---_iterable_to_array_limit_loose
+    ¦   ¦           +---_jsx
+    ¦   ¦           +---_new_arrow_check
+    ¦   ¦           +---_non_iterable_rest
+    ¦   ¦           +---_non_iterable_spread
+    ¦   ¦           +---_object_destructuring_empty
+    ¦   ¦           +---_object_spread
+    ¦   ¦           +---_object_spread_props
+    ¦   ¦           +---_object_without_properties
+    ¦   ¦           +---_object_without_properties_loose
+    ¦   ¦           +---_possible_constructor_return
+    ¦   ¦           +---_read_only_error
+    ¦   ¦           +---_set
+    ¦   ¦           +---_set_prototype_of
+    ¦   ¦           +---_skip_first_generator_next
+    ¦   ¦           +---_sliced_to_array
+    ¦   ¦           +---_sliced_to_array_loose
+    ¦   ¦           +---_super_prop_base
+    ¦   ¦           +---_tagged_template_literal
+    ¦   ¦           +---_tagged_template_literal_loose
+    ¦   ¦           +---_throw
+    ¦   ¦           +---_to_array
+    ¦   ¦           +---_to_consumable_array
+    ¦   ¦           +---_to_primitive
+    ¦   ¦           +---_to_property_key
+    ¦   ¦           +---_ts_add_disposable_resource
+    ¦   ¦           +---_ts_decorate
+    ¦   ¦           +---_ts_dispose_resources
+    ¦   ¦           +---_ts_generator
+    ¦   ¦           +---_ts_metadata
+    ¦   ¦           +---_ts_param
+    ¦   ¦           +---_ts_values
+    ¦   ¦           +---_type_of
+    ¦   ¦           +---_unsupported_iterable_to_array
+    ¦   ¦           +---_update
+    ¦   ¦           +---_using
+    ¦   ¦           +---_using_ctx
+    ¦   ¦           +---_wrap_async_generator
+    ¦   ¦           +---_wrap_native_super
+    ¦   ¦           +---_write_only_error
+    ¦   +---@tailwindcss
+    ¦   ¦   +---node
+    ¦   ¦   ¦   +---dist
+    ¦   ¦   +---oxide
+    ¦   ¦   +---oxide-win32-x64-msvc
+    ¦   ¦   +---vite
+    ¦   ¦       +---dist
+    ¦   +---@types
+    ¦   ¦   +---cookie
+    ¦   ¦   +---estree
+    ¦   ¦   +---node
+    ¦   ¦   ¦   +---assert
+    ¦   ¦   ¦   +---compatibility
+    ¦   ¦   ¦   +---dns
+    ¦   ¦   ¦   +---fs
+    ¦   ¦   ¦   +---readline
+    ¦   ¦   ¦   +---stream
+    ¦   ¦   ¦   +---timers
+    ¦   ¦   ¦   +---ts5.6
+    ¦   ¦   +---prop-types
+    ¦   ¦   +---react
+    ¦   ¦   ¦   +---ts5.0
+    ¦   ¦   ¦       +---v18
+    ¦   ¦   ¦           +---ts5.0
+    ¦   ¦   +---react-dom
+    ¦   ¦   ¦   +---test-utils
+    ¦   ¦   +---react-transition-group
+    ¦   ¦   +---warning
+    ¦   +---array-union
+    ¦   +---async
+    ¦   ¦   +---dist
+    ¦   ¦   +---internal
+    ¦   +---bootstrap
+    ¦   ¦   +---dist
+    ¦   ¦   ¦   +---css
+    ¦   ¦   ¦   +---js
+    ¦   ¦   +---js
+    ¦   ¦   ¦   +---dist
+    ¦   ¦   ¦   ¦   +---dom
+    ¦   ¦   ¦   ¦   +---util
+    ¦   ¦   ¦   +---src
+    ¦   ¦   ¦       +---dom
+    ¦   ¦   ¦       +---util
+    ¦   ¦   +---scss
+    ¦   ¦       +---forms
+    ¦   ¦       +---helpers
+    ¦   ¦       +---mixins
+    ¦   ¦       +---utilities
+    ¦   ¦       +---vendor
+    ¦   +---braces
+    ¦   ¦   +---lib
+    ¦   +---classnames
+    ¦   +---commander
+    ¦   ¦   +---lib
+    ¦   ¦   +---typings
+    ¦   +---commondir
+    ¦   ¦   +---example
+    ¦   ¦   +---test
+    ¦   +---csstype
+    ¦   +---debug
+    ¦   ¦   +---src
+    ¦   +---dequal
+    ¦   ¦   +---dist
+    ¦   ¦   +---lite
+    ¦   +---detect-libc
+    ¦   ¦   +---lib
+    ¦   +---dir-glob
+    ¦   +---email-addresses
+    ¦   ¦   +---lib
+    ¦   ¦   +---test
+    ¦   +---enhanced-resolve
+    ¦   ¦   +---lib
+    ¦   ¦       +---util
+    ¦   +---esbuild
+    ¦   ¦   +---bin
+    ¦   ¦   +---lib
+    ¦   +---escape-string-regexp
+    ¦   +---fast-glob
+    ¦   ¦   +---out
+    ¦   ¦       +---managers
+    ¦   ¦       +---providers
+    ¦   ¦       ¦   +---filters
+    ¦   ¦       ¦   +---matchers
+    ¦   ¦       ¦   +---transformers
+    ¦   ¦       +---readers
+    ¦   ¦       +---types
+    ¦   ¦       +---utils
+    ¦   +---fastq
+    ¦   ¦   +---.github
+    ¦   ¦   ¦   +---workflows
+    ¦   ¦   +---test
+    ¦   +---filename-reserved-regex
+    ¦   +---filenamify
+    ¦   +---fill-range
+    ¦   +---find-cache-dir
+    ¦   +---find-up
+    ¦   +---fs-extra
+    ¦   ¦   +---lib
+    ¦   ¦       +---copy
+    ¦   ¦       +---empty
+    ¦   ¦       +---ensure
+    ¦   ¦       +---fs
+    ¦   ¦       +---json
+    ¦   ¦       +---mkdirs
+    ¦   ¦       +---move
+    ¦   ¦       +---output-file
+    ¦   ¦       +---path-exists
+    ¦   ¦       +---remove
+    ¦   ¦       +---util
+    ¦   +---gh-pages
+    ¦   ¦   +---bin
+    ¦   ¦   +---lib
+    ¦   +---glob-parent
+    ¦   +---globby
+    ¦   +---globrex
+    ¦   +---graceful-fs
+    ¦   +---ignore
+    ¦   +---invariant
+    ¦   +---is-extglob
+    ¦   +---is-glob
+    ¦   +---is-number
+    ¦   +---isbot
+    ¦   +---jiti
+    ¦   ¦   +---dist
+    ¦   ¦   +---lib
+    ¦   +---js-tokens
+    ¦   +---jsonfile
+    ¦   +---lightningcss
+    ¦   ¦   +---node
+    ¦   +---lightningcss-win32-x64-msvc
+    ¦   +---locate-path
+    ¦   +---loose-envify
+    ¦   +---make-dir
+    ¦   +---merge2
+    ¦   +---micromatch
+    ¦   +---ms
+    ¦   +---nanoid
+    ¦   ¦   +---async
+    ¦   ¦   +---bin
+    ¦   ¦   +---non-secure
+    ¦   ¦   +---url-alphabet
+    ¦   +---object-assign
+    ¦   +---p-limit
+    ¦   +---p-locate
+    ¦   +---p-try
+    ¦   +---path-exists
+    ¦   +---path-type
+    ¦   +---picocolors
+    ¦   +---picomatch
+    ¦   ¦   +---lib
+    ¦   +---pkg-dir
+    ¦   +---postcss
+    ¦   ¦   +---lib
+    ¦   +---prop-types
+    ¦   ¦   +---lib
+    ¦   +---prop-types-extra
+    ¦   ¦   +---lib
+    ¦   ¦   ¦   +---utils
+    ¦   ¦   +---node_modules
+    ¦   ¦       +---warning
+    ¦   +---queue-microtask
+    ¦   +---react
+    ¦   ¦   +---cjs
+    ¦   +---react-bootstrap
+    ¦   ¦   +---AbstractModalHeader
+    ¦   ¦   +---Accordion
+    ¦   ¦   +---AccordionBody
+    ¦   ¦   +---AccordionButton
+    ¦   ¦   +---AccordionCollapse
+    ¦   ¦   +---AccordionContext
+    ¦   ¦   +---AccordionHeader
+    ¦   ¦   +---AccordionItem
+    ¦   ¦   +---AccordionItemContext
+    ¦   ¦   +---Alert
+    ¦   ¦   +---AlertHeading
+    ¦   ¦   +---AlertLink
+    ¦   ¦   +---Anchor
+    ¦   ¦   +---Badge
+    ¦   ¦   +---BootstrapModalManager
+    ¦   ¦   +---Breadcrumb
+    ¦   ¦   +---BreadcrumbItem
+    ¦   ¦   +---Button
+    ¦   ¦   +---ButtonGroup
+    ¦   ¦   +---ButtonToolbar
+    ¦   ¦   +---Card
+    ¦   ¦   +---CardBody
+    ¦   ¦   +---CardFooter
+    ¦   ¦   +---CardGroup
+    ¦   ¦   +---CardHeader
+    ¦   ¦   +---CardHeaderContext
+    ¦   ¦   +---CardImg
+    ¦   ¦   +---CardImgOverlay
+    ¦   ¦   +---CardLink
+    ¦   ¦   +---CardSubtitle
+    ¦   ¦   +---CardText
+    ¦   ¦   +---CardTitle
+    ¦   ¦   +---Carousel
+    ¦   ¦   +---CarouselCaption
+    ¦   ¦   +---CarouselItem
+    ¦   ¦   +---cjs
+    ¦   ¦   +---CloseButton
+    ¦   ¦   +---Col
+    ¦   ¦   +---Collapse
+    ¦   ¦   +---Container
+    ¦   ¦   +---createChainedFunction
+    ¦   ¦   +---createUtilityClasses
+    ¦   ¦   +---createWithBsPrefix
+    ¦   ¦   +---dist
+    ¦   ¦   +---divWithClassName
+    ¦   ¦   +---Dropdown
+    ¦   ¦   +---DropdownButton
+    ¦   ¦   +---DropdownContext
+    ¦   ¦   +---DropdownDivider
+    ¦   ¦   +---DropdownHeader
+    ¦   ¦   +---DropdownItem
+    ¦   ¦   +---DropdownItemText
+    ¦   ¦   +---DropdownMenu
+    ¦   ¦   +---DropdownToggle
+    ¦   ¦   +---ElementChildren
+    ¦   ¦   +---esm
+    ¦   ¦   +---Fade
+    ¦   ¦   +---Feedback
+    ¦   ¦   +---Figure
+    ¦   ¦   +---FigureCaption
+    ¦   ¦   +---FigureImage
+    ¦   ¦   +---FloatingLabel
+    ¦   ¦   +---Form
+    ¦   ¦   +---FormCheck
+    ¦   ¦   +---FormCheckInput
+    ¦   ¦   +---FormCheckLabel
+    ¦   ¦   +---FormContext
+    ¦   ¦   +---FormControl
+    ¦   ¦   +---FormFloating
+    ¦   ¦   +---FormGroup
+    ¦   ¦   +---FormLabel
+    ¦   ¦   +---FormRange
+    ¦   ¦   +---FormSelect
+    ¦   ¦   +---FormText
+    ¦   ¦   +---getInitialPopperStyles
+    ¦   ¦   +---getTabTransitionComponent
+    ¦   ¦   +---helpers
+    ¦   ¦   +---Image
+    ¦   ¦   +---InputGroup
+    ¦   ¦   +---InputGroupContext
+    ¦   ¦   +---InputGroupText
+    ¦   ¦   +---ListGroup
+    ¦   ¦   +---ListGroupItem
+    ¦   ¦   +---Modal
+    ¦   ¦   +---ModalBody
+    ¦   ¦   +---ModalContext
+    ¦   ¦   +---ModalDialog
+    ¦   ¦   +---ModalFooter
+    ¦   ¦   +---ModalHeader
+    ¦   ¦   +---ModalTitle
+    ¦   ¦   +---Nav
+    ¦   ¦   +---Navbar
+    ¦   ¦   +---NavbarBrand
+    ¦   ¦   +---NavbarCollapse
+    ¦   ¦   +---NavbarContext
+    ¦   ¦   +---NavbarOffcanvas
+    ¦   ¦   +---NavbarText
+    ¦   ¦   +---NavbarToggle
+    ¦   ¦   +---NavContext
+    ¦   ¦   +---NavDropdown
+    ¦   ¦   +---NavItem
+    ¦   ¦   +---NavLink
+    ¦   ¦   +---node_modules
+    ¦   ¦   ¦   +---dom-helpers
+    ¦   ¦   ¦   ¦   +---activeElement
+    ¦   ¦   ¦   ¦   +---addClass
+    ¦   ¦   ¦   ¦   +---addEventListener
+    ¦   ¦   ¦   ¦   +---animate
+    ¦   ¦   ¦   ¦   +---animationFrame
+    ¦   ¦   ¦   ¦   +---attribute
+    ¦   ¦   ¦   ¦   +---camelize
+    ¦   ¦   ¦   ¦   +---camelizeStyle
+    ¦   ¦   ¦   ¦   +---canUseDOM
+    ¦   ¦   ¦   ¦   +---childElements
+    ¦   ¦   ¦   ¦   +---childNodes
+    ¦   ¦   ¦   ¦   +---cjs
+    ¦   ¦   ¦   ¦   +---clear
+    ¦   ¦   ¦   ¦   +---closest
+    ¦   ¦   ¦   ¦   +---collectElements
+    ¦   ¦   ¦   ¦   +---collectSiblings
+    ¦   ¦   ¦   ¦   +---contains
+    ¦   ¦   ¦   ¦   +---css
+    ¦   ¦   ¦   ¦   +---esm
+    ¦   ¦   ¦   ¦   +---filterEventHandler
+    ¦   ¦   ¦   ¦   +---getComputedStyle
+    ¦   ¦   ¦   ¦   +---getScrollAccessor
+    ¦   ¦   ¦   ¦   +---hasClass
+    ¦   ¦   ¦   ¦   +---height
+    ¦   ¦   ¦   ¦   +---hyphenate
+    ¦   ¦   ¦   ¦   +---hyphenateStyle
+    ¦   ¦   ¦   ¦   +---insertAfter
+    ¦   ¦   ¦   ¦   +---isDocument
+    ¦   ¦   ¦   ¦   +---isInput
+    ¦   ¦   ¦   ¦   +---isTransform
+    ¦   ¦   ¦   ¦   +---isVisible
+    ¦   ¦   ¦   ¦   +---isWindow
+    ¦   ¦   ¦   ¦   +---listen
+    ¦   ¦   ¦   ¦   +---matches
+    ¦   ¦   ¦   ¦   +---nextUntil
+    ¦   ¦   ¦   ¦   +---offset
+    ¦   ¦   ¦   ¦   +---offsetParent
+    ¦   ¦   ¦   ¦   +---ownerDocument
+    ¦   ¦   ¦   ¦   +---ownerWindow
+    ¦   ¦   ¦   ¦   +---parents
+    ¦   ¦   ¦   ¦   +---position
+    ¦   ¦   ¦   ¦   +---prepend
+    ¦   ¦   ¦   ¦   +---querySelectorAll
+    ¦   ¦   ¦   ¦   +---remove
+    ¦   ¦   ¦   ¦   +---removeClass
+    ¦   ¦   ¦   ¦   +---removeEventListener
+    ¦   ¦   ¦   ¦   +---scrollbarSize
+    ¦   ¦   ¦   ¦   +---scrollLeft
+    ¦   ¦   ¦   ¦   +---scrollParent
+    ¦   ¦   ¦   ¦   +---scrollTo
+    ¦   ¦   ¦   ¦   +---scrollTop
+    ¦   ¦   ¦   ¦   +---siblings
+    ¦   ¦   ¦   ¦   +---text
+    ¦   ¦   ¦   ¦   +---toggleClass
+    ¦   ¦   ¦   ¦   +---transitionEnd
+    ¦   ¦   ¦   ¦   +---triggerEvent
+    ¦   ¦   ¦   ¦   +---width
+    ¦   ¦   ¦   +---warning
+    ¦   ¦   +---Offcanvas
+    ¦   ¦   +---OffcanvasBody
+    ¦   ¦   +---OffcanvasHeader
+    ¦   ¦   +---OffcanvasTitle
+    ¦   ¦   +---OffcanvasToggling
+    ¦   ¦   +---Overlay
+    ¦   ¦   +---OverlayTrigger
+    ¦   ¦   +---PageItem
+    ¦   ¦   +---Pagination
+    ¦   ¦   +---Placeholder
+    ¦   ¦   +---PlaceholderButton
+    ¦   ¦   +---Popover
+    ¦   ¦   +---PopoverBody
+    ¦   ¦   +---PopoverHeader
+    ¦   ¦   +---ProgressBar
+    ¦   ¦   +---Ratio
+    ¦   ¦   +---Row
+    ¦   ¦   +---safeFindDOMNode
+    ¦   ¦   +---Spinner
+    ¦   ¦   +---SplitButton
+    ¦   ¦   +---SSRProvider
+    ¦   ¦   +---Stack
+    ¦   ¦   +---Switch
+    ¦   ¦   +---Tab
+    ¦   ¦   +---TabContainer
+    ¦   ¦   +---TabContent
+    ¦   ¦   +---Table
+    ¦   ¦   +---TabPane
+    ¦   ¦   +---Tabs
+    ¦   ¦   +---ThemeProvider
+    ¦   ¦   +---Toast
+    ¦   ¦   +---ToastBody
+    ¦   ¦   +---ToastContainer
+    ¦   ¦   +---ToastContext
+    ¦   ¦   +---ToastFade
+    ¦   ¦   +---ToastHeader
+    ¦   ¦   +---ToggleButton
+    ¦   ¦   +---ToggleButtonGroup
+    ¦   ¦   +---Tooltip
+    ¦   ¦   +---transitionEndListener
+    ¦   ¦   +---TransitionWrapper
+    ¦   ¦   +---triggerBrowserReflow
+    ¦   ¦   +---types
+    ¦   ¦   +---useOverlayOffset
+    ¦   ¦   +---usePlaceholder
+    ¦   ¦   +---useWrappedRefWithWarning
+    ¦   +---react-dom
+    ¦   ¦   +---cjs
+    ¦   +---react-icons
+    ¦   ¦   +---ai
+    ¦   ¦   +---bi
+    ¦   ¦   +---bs
+    ¦   ¦   +---cg
+    ¦   ¦   +---ci
+    ¦   ¦   +---di
+    ¦   ¦   +---fa
+    ¦   ¦   +---fa6
+    ¦   ¦   +---fc
+    ¦   ¦   +---fi
+    ¦   ¦   +---gi
+    ¦   ¦   +---go
+    ¦   ¦   +---gr
+    ¦   ¦   +---hi
+    ¦   ¦   +---hi2
+    ¦   ¦   +---im
+    ¦   ¦   +---io
+    ¦   ¦   +---io5
+    ¦   ¦   +---lia
+    ¦   ¦   +---lib
+    ¦   ¦   +---lu
+    ¦   ¦   +---md
+    ¦   ¦   +---pi
+    ¦   ¦   +---ri
+    ¦   ¦   +---rx
+    ¦   ¦   +---si
+    ¦   ¦   +---sl
+    ¦   ¦   +---tb
+    ¦   ¦   +---tfi
+    ¦   ¦   +---ti
+    ¦   ¦   +---vsc
+    ¦   ¦   +---wi
+    ¦   +---react-is
+    ¦   ¦   +---cjs
+    ¦   ¦   +---umd
+    ¦   +---react-lifecycles-compat
+    ¦   +---react-router
+    ¦   ¦   +---dist
+    ¦   ¦   ¦   +---development
+    ¦   ¦   ¦   ¦   +---lib
+    ¦   ¦   ¦   ¦       +---types
+    ¦   ¦   ¦   +---production
+    ¦   ¦   ¦       +---lib
+    ¦   ¦   ¦           +---types
+    ¦   ¦   +---node_modules
+    ¦   ¦       +---cookie
+    ¦   ¦           +---dist
+    ¦   +---react-router-dom
+    ¦   ¦   +---dist
+    ¦   +---react-transition-group
+    ¦   ¦   +---cjs
+    ¦   ¦   ¦   +---utils
+    ¦   ¦   +---config
+    ¦   ¦   +---CSSTransition
+    ¦   ¦   +---dist
+    ¦   ¦   +---esm
+    ¦   ¦   ¦   +---utils
+    ¦   ¦   +---node_modules
+    ¦   ¦   ¦   +---dom-helpers
+    ¦   ¦   ¦       +---activeElement
+    ¦   ¦   ¦       +---addClass
+    ¦   ¦   ¦       +---addEventListener
+    ¦   ¦   ¦       +---animate
+    ¦   ¦   ¦       +---animationFrame
+    ¦   ¦   ¦       +---attribute
+    ¦   ¦   ¦       +---camelize
+    ¦   ¦   ¦       +---camelizeStyle
+    ¦   ¦   ¦       +---canUseDOM
+    ¦   ¦   ¦       +---childElements
+    ¦   ¦   ¦       +---childNodes
+    ¦   ¦   ¦       +---cjs
+    ¦   ¦   ¦       +---clear
+    ¦   ¦   ¦       +---closest
+    ¦   ¦   ¦       +---collectElements
+    ¦   ¦   ¦       +---collectSiblings
+    ¦   ¦   ¦       +---contains
+    ¦   ¦   ¦       +---css
+    ¦   ¦   ¦       +---esm
+    ¦   ¦   ¦       +---filterEventHandler
+    ¦   ¦   ¦       +---getComputedStyle
+    ¦   ¦   ¦       +---getScrollAccessor
+    ¦   ¦   ¦       +---hasClass
+    ¦   ¦   ¦       +---height
+    ¦   ¦   ¦       +---hyphenate
+    ¦   ¦   ¦       +---hyphenateStyle
+    ¦   ¦   ¦       +---insertAfter
+    ¦   ¦   ¦       +---isDocument
+    ¦   ¦   ¦       +---isInput
+    ¦   ¦   ¦       +---isTransform
+    ¦   ¦   ¦       +---isVisible
+    ¦   ¦   ¦       +---isWindow
+    ¦   ¦   ¦       +---listen
+    ¦   ¦   ¦       +---matches
+    ¦   ¦   ¦       +---nextUntil
+    ¦   ¦   ¦       +---offset
+    ¦   ¦   ¦       +---offsetParent
+    ¦   ¦   ¦       +---ownerDocument
+    ¦   ¦   ¦       +---ownerWindow
+    ¦   ¦   ¦       +---parents
+    ¦   ¦   ¦       +---position
+    ¦   ¦   ¦       +---prepend
+    ¦   ¦   ¦       +---querySelectorAll
+    ¦   ¦   ¦       +---remove
+    ¦   ¦   ¦       +---removeClass
+    ¦   ¦   ¦       +---removeEventListener
+    ¦   ¦   ¦       +---scrollbarSize
+    ¦   ¦   ¦       +---scrollLeft
+    ¦   ¦   ¦       +---scrollParent
+    ¦   ¦   ¦       +---scrollTo
+    ¦   ¦   ¦       +---scrollTop
+    ¦   ¦   ¦       +---siblings
+    ¦   ¦   ¦       +---text
+    ¦   ¦   ¦       +---toggleClass
+    ¦   ¦   ¦       +---transitionEnd
+    ¦   ¦   ¦       +---triggerEvent
+    ¦   ¦   ¦       +---width
+    ¦   ¦   +---ReplaceTransition
+    ¦   ¦   +---SwitchTransition
+    ¦   ¦   +---Transition
+    ¦   ¦   +---TransitionGroup
+    ¦   ¦   +---TransitionGroupContext
+    ¦   +---regenerator-runtime
+    ¦   +---reusify
+    ¦   ¦   +---.github
+    ¦   ¦   ¦   +---workflows
+    ¦   ¦   +---benchmarks
+    ¦   +---rollup
+    ¦   ¦   +---dist
+    ¦   ¦       +---bin
+    ¦   ¦       +---es
+    ¦   ¦       ¦   +---shared
+    ¦   ¦       +---shared
+    ¦   +---run-parallel
+    ¦   +---scheduler
+    ¦   ¦   +---cjs
+    ¦   +---semver
+    ¦   ¦   +---bin
+    ¦   +---set-cookie-parser
+    ¦   ¦   +---lib
+    ¦   +---slash
+    ¦   +---source-map-js
+    ¦   ¦   +---lib
+    ¦   +---strip-outer
+    ¦   +---swiper
+    ¦   ¦   +---modules
+    ¦   ¦   +---shared
+    ¦   ¦   +---types
+    ¦   ¦       +---modules
+    ¦   +---tailwindcss
+    ¦   ¦   +---dist
+    ¦   +---tapable
+    ¦   ¦   +---lib
+    ¦   +---to-regex-range
+    ¦   +---trim-repeated
+    ¦   +---tsconfck
+    ¦   ¦   +---bin
+    ¦   ¦   +---src
+    ¦   ¦   +---types
+    ¦   +---tslib
+    ¦   ¦   +---modules
+    ¦   +---turbo-stream
+    ¦   ¦   +---dist
+    ¦   +---typescript
+    ¦   ¦   +---bin
+    ¦   ¦   +---lib
+    ¦   ¦       +---cs
+    ¦   ¦       +---de
+    ¦   ¦       +---es
+    ¦   ¦       +---fr
+    ¦   ¦       +---it
+    ¦   ¦       +---ja
+    ¦   ¦       +---ko
+    ¦   ¦       +---pl
+    ¦   ¦       +---pt-br
+    ¦   ¦       +---ru
+    ¦   ¦       +---tr
+    ¦   ¦       +---zh-cn
+    ¦   ¦       +---zh-tw
+    ¦   +---uncontrollable
+    ¦   ¦   +---lib
+    ¦   ¦   ¦   +---cjs
+    ¦   ¦   ¦   +---esm
+    ¦   ¦   +---test
+    ¦   +---undici-types
+    ¦   +---universalify
+    ¦   +---uuid
+    ¦   ¦   +---dist
+    ¦   ¦       +---cjs
+    ¦   ¦       +---cjs-browser
+    ¦   ¦       +---esm
+    ¦   ¦       ¦   +---bin
+    ¦   ¦       +---esm-browser
+    ¦   +---vite
+    ¦   ¦   +---bin
+    ¦   ¦   +---dist
+    ¦   ¦   ¦   +---client
+    ¦   ¦   ¦   +---node
+    ¦   ¦   ¦   ¦   +---chunks
+    ¦   ¦   ¦   +---node-cjs
+    ¦   ¦   +---types
+    ¦   +---vite-tsconfig-paths
+    ¦       +---dist
+    ¦       +---src
+    +---public
+    +---src
+        +---assets
+        ¦   +---images
+        ¦   +---styles
+        +---components
+        +---pages
+        +---styles
